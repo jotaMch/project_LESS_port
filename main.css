@@ -8,22 +8,30 @@
 .container {
     max-width: 500px;
     margin: 14px auto;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
-body,
-section {
-    background-color: #f6f6f6;
+body {
+    background-color: #dddddd;
 }
 
 #one {
-    background-color: #f6f6f6;
-    border-top-right-radius: 50%;
-    padding-top: 6px;
+    margin-top: 4px;
+}
+
+#one,
+section {
+    background-color: #fafafa;
+    padding: 0 8px;
+}
+
+section {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 
 .container {
-    background-color: #eaeaea;
+    background-color: #ededede1;
 }
 
 h2 {
@@ -123,7 +131,7 @@ a {
 }
 
 .p {
-    padding: 6px 0;
+    padding: 4px 0 10px;
 }
 
 @media screen and (max-width: 767px) {
