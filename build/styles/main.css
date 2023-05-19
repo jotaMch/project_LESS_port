@@ -41,7 +41,7 @@ header {
 }
 header .profile {
   display: block;
-  max-width: 96px;
+  max-width: 98px;
   opacity: 80%;
   margin: 0 auto 24px;
   border-radius: 50%;
@@ -52,11 +52,11 @@ header .profile {
   margin: 0 auto;
 }
 .profile-bio-name {
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 8px;
 }
 .profile-bio-subtitle {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 8px;
 }
 .profile-bio-description {
