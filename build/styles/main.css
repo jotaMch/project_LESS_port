@@ -11,7 +11,7 @@ span {
   display: block;
 }
 body {
-  background-color: #192a56;
+  background-image: linear-gradient(to bottom, #2a4474, #1a3055, #071330);
   color: #f5f6fa;
 }
 li {
