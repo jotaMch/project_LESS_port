@@ -110,14 +110,14 @@ header .profile {
   text-decoration: none;
   background-color: #0097e6;
   display: block;
-  padding: 16px 20px;
+  padding: 14px 20px;
   margin-bottom: 16px;
   text-align: center;
   color: #f5f6fa;
   font-weight: bold;
   border-radius: 30px;
   border: 2px solid #0097e6;
-  transition: opacity 0.3s ease;
+  transition: all ease 0.5s;
 }
 .projects-list-item a:hover {
   color: #0097e6;
