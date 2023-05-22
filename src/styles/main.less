@@ -1,4 +1,4 @@
-
+@import 'mais.less';
 @import "mapas.less";
 @breakpointMobile: ~"(max-width: 767px)";
 @breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
@@ -63,6 +63,7 @@ header {
     text-align: center;
     max-width: 520px;
     margin: 0 auto;
+    transition: all ease .3s;
 
     &-name {
         font-size: 15px;
@@ -74,9 +75,14 @@ header {
         .marginBottom8();
     }
 
-    &-description {
-        font-size: 14px;
-        opacity: .7;
+    &-description,
+    .objetivo {
+        font-size: 12px;
+        opacity: .8;
+    }
+
+    .objetivo {
+        display: non;
     }
 }
 
@@ -103,6 +109,7 @@ header {
     margin-top: 32px;
     max-width: 700px;
     margin: 8px auto;
+    transition: opacity 0.3s ease;
 
     &-item {
         a {
@@ -116,12 +123,30 @@ header {
             font-weight: bold;
             border-radius: 30px;
             border: 2px solid #colors[buttonColor];
-            transition: all ease .5s;
+            transition: opacity 0.3s ease;
 
             &:hover {
                 color: #colors[buttonColor];
                 background-color: transparent;
             }
         }
+    }
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid #colors[buttonColor];
+    color: #colors[textColor];
+    border-radius: 30px;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 2px 12px;
+    font-weight: bold;
+    text-transform: lowercase;
+    cursor: pointer;
+
+    &:hover {
+        border: 2px solid #colors[btnHover];
+        transition: all ease .2s;
     }
 }

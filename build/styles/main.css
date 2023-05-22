@@ -1,3 +1,22 @@
+.mais {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+}
+.mais h3 {
+  margin: 12px 0;
+}
+.mais-img {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 450px;
+  margin: 14px 255px;
+}
+.mais-img img {
+  max-width: 86px;
+  width: 100%;
+  border-radius: 12px;
+}
 .marginBottom8 {
   margin-bottom: 8px;
 }
@@ -50,6 +69,7 @@ header .profile {
   text-align: center;
   max-width: 520px;
   margin: 0 auto;
+  transition: all ease 0.3s;
 }
 .profile-bio-name {
   font-size: 15px;
@@ -59,9 +79,13 @@ header .profile {
   font-size: 16px;
   margin-bottom: 8px;
 }
-.profile-bio-description {
-  font-size: 14px;
-  opacity: 0.7;
+.profile-bio-description,
+.profile-bio .objetivo {
+  font-size: 12px;
+  opacity: 0.8;
+}
+.profile-bio .objetivo {
+  display: non;
 }
 .social-links {
   display: flex;
@@ -80,6 +104,7 @@ header .profile {
   margin-top: 32px;
   max-width: 700px;
   margin: 8px auto;
+  transition: opacity 0.3s ease;
 }
 .projects-list-item a {
   text-decoration: none;
@@ -92,9 +117,25 @@ header .profile {
   font-weight: bold;
   border-radius: 30px;
   border: 2px solid #0097e6;
-  transition: all ease 0.5s;
+  transition: opacity 0.3s ease;
 }
 .projects-list-item a:hover {
   color: #0097e6;
   background-color: transparent;
+}
+button {
+  background-color: transparent;
+  border: 2px solid #0097e6;
+  color: #f5f6fa;
+  border-radius: 30px;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 2px 12px;
+  font-weight: bold;
+  text-transform: lowercase;
+  cursor: pointer;
+}
+button:hover {
+  border: 2px solid #007abc;
+  transition: all ease 0.2s;
 }
