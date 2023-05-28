@@ -1,5 +1,5 @@
 const textSub = document.querySelector('.profile-bio-subtitle');
-const text = "Desenvolvedor Front-end Júnior"
+const text = "Desenvolvedor Front-end "
 const interval = 80;
 
 function showText(textSub, text, interval) {
