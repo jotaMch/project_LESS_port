@@ -107,7 +107,7 @@ header .profile {
 }
 .projects-list-item a {
   text-decoration: none;
-  background-color: #0097e6;
+  background-color: #1284c2;
   display: block;
   padding: 14px 20px;
   margin-bottom: 16px;
@@ -115,29 +115,26 @@ header .profile {
   color: #f5f6fa;
   font-weight: bold;
   border-radius: 30px;
-  border: 2px solid #0097e6;
+  border: 2px solid #1284c2;
   transition: all ease 0.5s;
 }
 .projects-list-item a:hover {
-  color: #0097e6;
+  color: #1284c2;
   background-color: transparent;
 }
-/*
 button {
-    background-color: transparent;
-    border: 2px solid #colors[buttonColor];
-    color: #colors[textColor];
-    border-radius: 30px;
-    max-width: 300px;
-    margin: 0 auto;
-    padding: 2px 12px;
-    font-weight: bold;
-    text-transform: lowercase;
-    cursor: pointer;
-
-    &:hover {
-        border: 2px solid #colors[btnHover];
-        transition: all ease .2s;
-    }
+  background-color: transparent;
+  border: 2px solid #1284c2;
+  color: #f5f6fa;
+  border-radius: 30px;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 2px 12px;
+  font-weight: bold;
+  text-transform: lowercase;
+  cursor: pointer;
 }
-*/
+button:hover {
+  border: 2px solid #007abc;
+  transition: all ease 0.2s;
+}
