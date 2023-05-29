@@ -1,22 +1,3 @@
-.mais {
-  display: none;
-  flex-direction: column;
-  text-align: center;
-}
-.mais h3 {
-  margin: 12px 0;
-}
-.mais-img {
-  display: flex;
-  justify-content: space-evenly;
-  max-width: 450px;
-  margin: 14px 255px;
-}
-.mais-img img {
-  max-width: 86px;
-  width: 100%;
-  border-radius: 12px;
-}
 .marginBottom8 {
   margin-bottom: 8px;
 }
@@ -72,18 +53,18 @@ header .profile {
   transition: all ease 0.3s;
 }
 .profile-bio-name {
-  font-size: 16px;
+  font-size: 20px;
 }
 .profile-bio-subtitle {
-  font-size: 26px;
+  font-size: 28px;
   font-family: 'Archivo Black', sans-serif;
   margin-bottom: 8px;
 }
 .profile-bio-description,
 .profile-bio .objetivo {
-  max-width: 460px;
+  max-width: 560px;
   margin: 0 auto;
-  font-size: 14.6px;
+  font-size: 16px;
   opacity: 0.9;
 }
 .social-links {
