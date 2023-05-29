@@ -72,10 +72,10 @@ header .profile {
   transition: all ease 0.3s;
 }
 .profile-bio-name {
-  font-size: 15px;
+  font-size: 16px;
 }
 .profile-bio-subtitle {
-  font-size: 28px;
+  font-size: 26px;
   font-family: 'Archivo Black', sans-serif;
   margin-bottom: 8px;
 }
@@ -83,8 +83,8 @@ header .profile {
 .profile-bio .objetivo {
   max-width: 460px;
   margin: 0 auto;
-  font-size: 14px;
-  opacity: 0.8;
+  font-size: 14.6px;
+  opacity: 0.9;
 }
 .social-links {
   display: flex;
