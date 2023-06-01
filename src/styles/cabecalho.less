@@ -1,0 +1,74 @@
+
+.cabecalho {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media @breakpointMobile {
+        width: 80%;
+    }
+
+    h1 {
+        //font-style: italic;
+        //font-weight: lighter;
+        font-family: 'Acme', sans-serif;
+        font-size: 38px;
+        /*
+        background-image: linear-gradient(100deg, rgb(244, 168, 168) 50%, rgb(2, 0, 37)50%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;*/
+
+        @media @breakpointMobile {
+            font-size: 18px;
+        }
+    }
+
+    h2 {
+        font-size: 62px;
+        font-family: 'Rowdies', cursive;
+        margin: 12px 0;
+        /*background-image: linear-gradient(90deg, rgb(244, 168, 168) 58%, rgb(47, 44, 102), rgb(2, 0, 37)40%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;*/
+        
+        @media @breakpointMobile {
+            font-size: 28px;
+            margin: 0 auto;
+            text-align: center;
+            //max-width: 240px;
+            //width: 100%;
+        }
+    }
+    
+    button {
+        padding: 6px 8px;
+        border-radius: 4px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        font-family: 'Zilla Slab', serif;
+        color: #colors[textColor];
+        text-transform: none;
+        font-size: 12px;
+        background-color: #colors[buttonColor];
+        border: 2px solid #colors[buttonColor];
+        transition: all ease .5s;
+
+        @media @breakpointMobile {
+            padding: 2px 4px;
+            font-size: 12px;
+            margin: 12px auto;
+        }
+
+        &:hover {
+            background-color: transparent;
+            color: #colors[btnHover];
+        }
+    }
+}

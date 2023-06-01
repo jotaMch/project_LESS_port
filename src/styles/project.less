@@ -1,0 +1,27 @@
+
+.projects-list {
+    max-width: 700px;
+    margin: 0 auto ;
+    transition: opacity 0.3s ease;
+
+    &-item {
+        a {
+            text-decoration: none;
+            background-color: #colors[buttonColor];
+            display: block;
+            padding: 14px 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #colors[textColor];
+            font-weight: bold;
+            border-radius: 30px;
+            border: 2px solid #colors[buttonColor];
+            transition: all ease .5s;
+
+            &:hover {
+                color: #colors[buttonColor];
+                background-color: transparent;
+            }
+        }
+    }
+}

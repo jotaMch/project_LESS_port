@@ -1,5 +1,7 @@
-@import 'mais.less';
+@import 'cabecalho.less';
 @import "mapas.less";
+@import "container.less";
+@import "project.less";
 @breakpointMobile: ~"(max-width: 767px)";
 @breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
 
@@ -27,138 +29,9 @@ li {
     list-style: none;
 }
 
-.container {
-    max-width: 960px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    @media @breakpointMobile {
-        max-width: 80%;
-        //background-color: ;
-    }
-
-    @media @breakpointTablet {
-        max-width: 80%;
-        //background-color: ;
-    }    
-}
-
-.cabecalho {
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    @media @breakpointMobile {
-        width: 80%;
-    }
-
-    h1 {
-        //font-style: italic;
-        //font-weight: lighter;
-        font-family: 'Acme', sans-serif;
-        font-size: 38px;
-        /*
-        background-image: linear-gradient(100deg, rgb(244, 168, 168) 50%, rgb(2, 0, 37)50%);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        color: transparent;*/
-
-        @media @breakpointMobile {
-            font-size: 18px;
-        }
-    }
-
-    h2 {
-        font-size: 62px;
-        font-family: 'Rowdies', cursive;
-        margin: 12px 0;
-        /*background-image: linear-gradient(90deg, rgb(244, 168, 168) 58%, rgb(47, 44, 102), rgb(2, 0, 37)40%);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        color: transparent;*/
-        
-        @media @breakpointMobile {
-            font-size: 28px;
-            margin: 0 auto;
-            text-align: center;
-            //max-width: 240px;
-            //width: 100%;
-        }
-    }
-    
-    button {
-        padding: 6px 8px;
-        border-radius: 4px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-        font-family: 'Zilla Slab', serif;
-        color: #colors[textColor];
-        text-transform: none;
-        font-size: 12px;
-        background-color: #colors[buttonColor];
-        border: 2px solid #colors[buttonColor];
-        transition: all ease .5s;
-
-        @media @breakpointMobile {
-            padding: 2px 4px;
-            font-size: 12px;
-            margin: 12px auto;
-        }
-
-        &:hover {
-            background-color: transparent;
-            color: #colors[btnHover];
-        }
-    }
-}
-
-.container-flex {
-    //display: flex;
-    //justify-content: space-between;
-    margin-bottom: 180px;
-
-    @media @breakpointMobile {
-        margin-bottom: 80px;
-    }
-
-    button {
-        position: absolute;
-        right: 12%;
-        padding: 6px 8px;
-        border-radius: 50px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-        color: #colors[textColor];
-        background-color: #colors[buttonColor];
-        border: 2px solid #colors[buttonColor];
-        transition: all ease .5s;
-
-        @media @breakpointTablet {
-            right: 2%;
-        }
-
-
-        &:hover {
-            background-color: transparent;
-            color: #colors[btnHover];
-        }
-        
-        img {
-            filter: invert(100%); 
-        }
-    }
-}
-
 
 #sobre {
-    padding-bottom: 24px;
+    padding: 44px 0;
 
     .profile {
         display: block;
@@ -198,33 +71,6 @@ li {
 
             &:hover {
                 transform: scale(1.3);
-            }
-        }
-    }
-}
-
-.projects-list {
-    max-width: 700px;
-    margin: 0 auto ;
-    transition: opacity 0.3s ease;
-
-    &-item {
-        a {
-            text-decoration: none;
-            background-color: #colors[buttonColor];
-            display: block;
-            padding: 14px 20px;
-            margin-bottom: 20px;
-            text-align: center;
-            color: #colors[textColor];
-            font-weight: bold;
-            border-radius: 30px;
-            border: 2px solid #colors[buttonColor];
-            transition: all ease .5s;
-
-            &:hover {
-                color: #colors[buttonColor];
-                background-color: transparent;
             }
         }
     }
