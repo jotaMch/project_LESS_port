@@ -10,66 +10,85 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet"><!--nome-->
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet"> <!--front-end-->
 </head>
 <body>
     <div class="container">
-        <header>
-            <img class="profile" src="src/images/perfil-original.jpg" />
-            <div class="profile-bio">
-                <h1 class="profile-bio-name">Olá, me chamo Jânderson</h1>
-                <h2 class="profile-bio-subtitle"></h2>
-                <p class="profile-bio-description">
-                    Sou um desenvolvedor dedicado, com 22 anos, residindo no Rio de Janeiro, e estou atualmente buscando oportunidades no mercado de trabalho. Tenho uma paixão por criar experiências digitais incríveis e estou em constante busca por aprimorar minhas habilidades e conhecimentos.
-                </p>
-                <!--<p class="objetivo"> 
-                    Meu objetivo é me tornar um profissional exemplar, mantendo-me atualizado sobre as últimas tecnologias e buscando constantemente novas experiências no campo do desenvolvimento. Estou entusiasmado para contribuir com projetos desafiadores e colaborar em equipes de alto desempenho.
-                </p>
-                <button id="btn-mais" type="button">Mais</button>-->
+        <header id="inicio">
+            <div class="cabecalho">
+                <h1>Jânderson <span class="blue">Machado</span></h1>
+                <h2 class="subtitle"></h2>
+                <button type="button" onclick="scrollToSection('sobre')">Sobre mim</button>
             </div>
         </header>
-        <nav>
-            <ul class="social-links">
-                <li>
-                    <a href="https://www.linkedin.com/in/j%C3%A2nderson-machado-082b54259/">
-                        <img src="./src/images/linkedin.svg" alt="Logo do linkedin">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/jotaMch">
-                        <img src="./src/images/github.svg" alt="Logo do github">
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:jandersonmachado090@gmail.com">
-                        <img src="./src/images/mail.svg" alt="Logo do Email">
-                    </a>
-                <!--</li>
-                <li>
-                <a href="">
-                    <img src="./src/images/instagram.svg" alt="Logo do instagram">
-                </a>
-                </li>-->
-            </ul>
-        </nav>
-        <nav>
-            <ul class="projects-list">
-                <li class="projects-list-item">
-                    <a href="https://loja-de-roupas-jm.vercel.app/">
-                        Visite o projeto Grif Shop
-                    </a>
-                </li>
-                <li class="projects-list-item">
-                    <a href="https://projeto-calculadora-medias-jm.vercel.app/">
-                        Visite o projeto Calculadora de médias
-                    </a>
-                </li>
-                <li class="projects-list-item">
-                    <a href="https://jm-jquery-galeria-fotos.vercel.app/">
-                        Visite o projeto Galeria de fotos
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <div class="container-flex">
+            <div id="sobre">
+                <img class="profile" src="src/images/perfil-original.jpg" />
+                <div class="profile-bio">
+                    <nav>
+                        <ul class="social-links">
+                            <li>
+                                <a href="https://www.linkedin.com/in/j%C3%A2nderson-machado-082b54259/">
+                                    <img src="./src/images/linkedin.svg" alt="Logo do linkedin">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/jotaMch">
+                                    <img src="./src/images/github.svg" alt="Logo do github">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:jandersonmachado090@gmail.com">
+                                    <img src="./src/images/mail.svg" alt="Logo do Email">
+                                </a>
+                            <!--</li>
+                            <li>
+                            <a href="">
+                                <img src="./src/images/instagram.svg" alt="Logo do instagram">
+                            </a>
+                            </li>-->
+                        </ul>
+                    </nav>
+                    <h2 class="profile-bio-subtitle"></h2>
+                    <p class="profile-bio-description">
+                        Olá, sou um desenvolvedor dedicado, com 22 anos, residindo no Rio de Janeiro, e estou
+                        atualmente buscando oportunidades no mercado. <br />
+                        Estou cursando React do zero ao pro e finalizando meu curso de Front-end,
+                        tenho uma paixão por criar novas experiências digitais, como objetivo busco
+                        aprimorar minhas habilidades e conhecimentos.<br />
+                    </p>
+                    <!--<p class="objetivo"> 
+                        Meu objetivo é me tornar um profissional exemplar, mantendo-me atualizado sobre as últimas tecnologias e buscando constantemente novas experiências no campo do desenvolvimento. Estou entusiasmado para contribuir com projetos desafiadores e colaborar em equipes de alto desempenho.
+                    </p>
+                    <button id="btn-mais" type="button">Mais</button>-->
+                </div>
+            </div>
+            <div>
+                <nav>
+                    <ul class="projects-list">
+                        <li class="projects-list-item">
+                            <a href="https://loja-de-roupas-jm.vercel.app/">
+                                Visite o projeto Grif Shop
+                            </a>
+                        </li>
+                        <li class="projects-list-item">
+                            <a href="https://projeto-calculadora-medias-jm.vercel.app/">
+                                Visite o projeto Calculadora de médias
+                            </a>
+                        </li>
+                        <li class="projects-list-item">
+                            <a href="https://jm-jquery-galeria-fotos.vercel.app/">
+                                Visite o projeto Galeria de fotos
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button type="button" onclick="scrollToSection('inicio')">
+                    <img class="up" src="./src/images/chevrons-up.svg" alt="logo up" >
+                </button>
+            </div>
+        </div>
     </div>
     <script src="main.js"></script>
 </body>

@@ -14,14 +14,14 @@
     font-family: 'Overpass', sans-serif;
 }
 
-span {
-    display: block;
-}
-
 body {
-    background-image: linear-gradient(to bottom, #5a616e, #314363, #132844, #05112e);
+    background: linear-gradient(48deg, rgb(2, 0, 37) 52%, rgb(255, 223, 223) 100%);
     color: #colors[textColor];
 }
+/*
+span {
+    color: rgb(2, 0, 37);
+}*/
 
 li {
     list-style: none;
@@ -31,7 +31,6 @@ li {
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,7 +46,118 @@ li {
     }    
 }
 
-header {
+.cabecalho {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media @breakpointMobile {
+        width: 80%;
+    }
+
+    h1 {
+        //font-style: italic;
+        //font-weight: lighter;
+        font-family: 'Acme', sans-serif;
+        font-size: 38px;
+        /*
+        background-image: linear-gradient(100deg, rgb(244, 168, 168) 50%, rgb(2, 0, 37)50%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;*/
+
+        @media @breakpointMobile {
+            font-size: 18px;
+        }
+    }
+
+    h2 {
+        font-size: 62px;
+        font-family: 'Rowdies', cursive;
+        margin: 12px 0;
+        /*background-image: linear-gradient(90deg, rgb(244, 168, 168) 58%, rgb(47, 44, 102), rgb(2, 0, 37)40%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;*/
+        
+        @media @breakpointMobile {
+            font-size: 28px;
+            margin: 0 auto;
+            text-align: center;
+            //max-width: 240px;
+            //width: 100%;
+        }
+    }
+    
+    button {
+        padding: 6px 8px;
+        border-radius: 4px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        font-family: 'Zilla Slab', serif;
+        color: #colors[textColor];
+        text-transform: none;
+        font-size: 12px;
+        background-color: #colors[buttonColor];
+        border: 2px solid #colors[buttonColor];
+        transition: all ease .5s;
+
+        @media @breakpointMobile {
+            padding: 2px 4px;
+            font-size: 12px;
+            margin: 12px auto;
+        }
+
+        &:hover {
+            background-color: transparent;
+            color: #colors[btnHover];
+        }
+    }
+}
+
+.container-flex {
+    //display: flex;
+    //justify-content: space-between;
+    margin-bottom: 180px;
+
+    @media @breakpointMobile {
+        margin-bottom: 80px;
+    }
+
+    button {
+        position: absolute;
+        right: 12%;
+        padding: 6px 8px;
+        border-radius: 50px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        color: #colors[textColor];
+        background-color: #colors[buttonColor];
+        border: 2px solid #colors[buttonColor];
+        transition: all ease .5s;
+
+        @media @breakpointTablet {
+            right: 2%;
+        }
+
+
+        &:hover {
+            background-color: transparent;
+            color: #colors[btnHover];
+        }
+        
+        img {
+            filter: invert(100%); 
+        }
+    }
+}
+
+
+#sobre {
     padding-bottom: 24px;
 
     .profile {
@@ -61,26 +171,16 @@ header {
 
 .profile-bio {
     text-align: center;
-    max-width: 520px;
+    max-width: 540px;
     margin: 0 auto;
     transition: all ease .3s;
 
-    &-name {
-        font-size: 20px;
-    }
-
-    &-subtitle {
-        font-size: 28px;
-        font-family: 'Archivo Black', sans-serif;
-        .marginBottom8();
-    }
-
-    &-description,
-    .objetivo {
+    &-description {
         max-width: 560px;
         margin: 0 auto;
         font-size: 16px;
         opacity: .9;
+        line-height: 2em;
     }
 }
 
@@ -104,9 +204,8 @@ header {
 }
 
 .projects-list {
-    margin-top: 32px;
     max-width: 700px;
-    margin: 8px auto;
+    margin: 0 auto ;
     transition: opacity 0.3s ease;
 
     &-item {
@@ -115,7 +214,7 @@ header {
             background-color: #colors[buttonColor];
             display: block;
             padding: 14px 20px;
-            margin-bottom: 16px;
+            margin-bottom: 20px;
             text-align: center;
             color: #colors[textColor];
             font-weight: bold;
