@@ -65,7 +65,56 @@
 }
 .cabecalho button:hover {
   background-color: transparent;
-  color: #007abc;
+  color: #f5f6fa;
+}
+.cabecalho .skills {
+  position: relative;
+  top: 14%;
+  display: flex;
+  flex-direction: column;
+}
+.cabecalho .skills h3 {
+  padding: 56px 0 20px;
+  font-size: 18px;
+  font-family: 'Acme', sans-serif;
+}
+@media (max-width: 767px) {
+  .cabecalho .skills h3 {
+    padding: 12px 0 20px;
+  }
+}
+.cabecalho .skills .bloco2 {
+  max-width: 300px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .cabecalho .skills .bloco2 {
+    margin: 14px auto;
+  }
+}
+@media (max-width: 767px) {
+  .cabecalho .skills .bloco2 {
+    max-width: 180px;
+    margin: 14px auto;
+  }
+}
+.cabecalho .skills ul {
+  max-width: 420px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.cabecalho .skills ul li img {
+  max-width: 52px;
+  transition: all ease 0.3s;
+  opacity: calc(80%);
+}
+@media (max-width: 767px) {
+  .cabecalho .skills ul li img {
+    max-width: 40px;
+  }
+}
+.cabecalho .skills ul li img:hover {
+  transform: scale(1.2);
 }
 .container {
   max-width: 960px;
@@ -148,7 +197,7 @@
   font-family: 'Overpass', sans-serif;
 }
 body {
-  background: linear-gradient(48deg, #020025 52%, #ffdfdf 100%);
+  background: linear-gradient(50deg, #020025 56%, #ffdfdf 100%);
   color: #f5f6fa;
 }
 /*

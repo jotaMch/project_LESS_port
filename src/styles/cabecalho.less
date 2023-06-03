@@ -68,7 +68,62 @@
 
         &:hover {
             background-color: transparent;
-            color: #colors[btnHover];
+            color: #colors[textColor];
         }
+    }
+
+    .skills {
+        position: relative;
+        top: 14%;
+        display: flex;
+        flex-direction: column;
+        //margin: 30% 0 0;
+
+        
+        h3 {
+            padding: 56px 0 20px;
+            font-size: 18px;
+            font-family: 'Acme', sans-serif;
+
+            @media @breakpointMobile {
+                padding: 12px 0 20px;
+            }
+        }
+
+        .bloco2 {
+            max-width: 300px;
+
+            @media @breakpointTablet {
+                margin: 14px auto;
+            }
+
+            @media @breakpointMobile {
+                max-width: 180px;
+                margin: 14px auto;
+            }
+        }
+        
+        ul{
+            max-width: 420px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                img {
+                    max-width: 52px;
+                    transition: all ease .3s;
+                    opacity: calc(80%) ;
+
+                    @media @breakpointMobile {
+                        max-width: 40px;
+                    }
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+    }
     }
 }
