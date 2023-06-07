@@ -19,7 +19,10 @@
             <div class="cabecalho">
                 <h1>Jânderson Machado</h1>
                 <h2 class="subtitle"></h2>
-                <button type="button" onclick="scrollToSection('sobre')">Sobre mim</button>
+                <div class="buttons">
+                    <button type="button" onclick="scrollToSection('sobre')">Sobre mim</button>
+                    <button type="button" onclick="scrollToSection('projetos')">Meus projetos</button>
+                </div>
                 <!--<div class="skills">
                     <div class="skills-color">
                         <h3>< Habilidades ></h3>
@@ -41,9 +44,9 @@
             </div>
         </header>
         <div class="container-flex">
-            <div id="sobre">
-                <img class="profile" src="src/images/perfil-original.jpg" />
+            <section id="sobre">
                 <div class="profile-bio">
+                    <img class="profile" src="src/images/perfil-original.jpg" />
                     <nav>
                         <ul class="social-links">
                             <li>
@@ -69,16 +72,34 @@
                         </ul>
                     </nav>
                     <p class="profile-bio-description">
-                        Olá me chamo Jânderson, sou um desenvolvedor dedicado com 23 anos residindo no Rio de Janeiro e estou
-                        atualmente buscando oportunidades no mercado. <br />
-                        Gosto bastante de me desenvolver e aprender mais sobre tecnologia, 
-                        estou cursando React do zero ao pro e finalizando meu curso de Front-end,
-                        tenho uma paixão por criar novas experiências digitais, como objetivo busco
-                        aprimorar minhas habilidades e conhecimentos.<br />
+                        Olá, me chamo Jânderson. Sou um desenvolvedor dedicado com 23 anos, resido no Rio de Janeiro e sou apaixonado por tecnologia. 
+                        Atualmente, estou buscando oportunidades no mercado para colocar
+                        em prática meus conhecimentos.
+                        Gosto muito de me desenvolver e aprender mais sobre tecnologias. 
+                        Estou estudando React e atravéz desse estudo busco aprimorar minha capacidade de criar novas experiências que proporcionam
+                        ótima usabilidade para os usuários.<br />
                     </p>
                 </div>
-            </div>
-            <div>
+                <div class="cursos">
+                    <h2>Cursos</h2>
+                    <nav>
+                        <ul>
+                            <li>Tenho o curso de introdução a programação - Completo / EBAC</li>
+                            <li>Tenho o Curso de Desenvolvimento Front-end do zero ao pro - Completo / EBAC</li>
+                            <li>Estudo React do zero ao pro - Estudanto / EBAC</li>
+                            <li>Estudo por fora sempre bucando maior conhecimento desde 2022.</li>
+                        </ul>
+                    </nav>
+                    <h2>Objetivo</h2>
+                    <p>
+                        Meu objetivo é aplicar minhas habilidades como desenvolvedor front-end 
+                        para criar interfaces web modernas e responsivas utilizando as melhores práticas. 
+                        Busco oportunidades para contribuir em projetos desafiadores, aprimorar minhas habilidades 
+                        técnicas e colaborar com uma equipe criativa visando o crescimento profissional.
+                    </p>
+                </div>
+            </section>
+            <section id="projetos">
                 <h2 class="project">Meus Projetos</h2>
                 <nav>
                     <ul class="projects-list">
@@ -114,7 +135,7 @@
                 <button type="button" onclick="scrollToSection('inicio')">
                     <img class="up" src="./src/images/chevrons-up.svg" alt="logo up" >
                 </button>
-            </div>
+            </section>
         </div>
     </div>
     <script src="main.js"></script>
