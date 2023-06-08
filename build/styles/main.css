@@ -18,6 +18,8 @@
 @media (max-width: 767px) {
   .cabecalho .buttons button {
     display: block;
+    text-align: center;
+    margin: 4px auto;
   }
 }
 .cabecalho h1 {
