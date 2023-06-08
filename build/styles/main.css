@@ -70,7 +70,7 @@
 }
 @media (max-width: 767px) {
   .cabecalho button {
-    padding: 2px 4px;
+    padding: 4px 6px;
     font-size: 12px;
     margin: 12px auto;
   }
@@ -78,7 +78,10 @@
 .cabecalho button:hover {
   background-image: linear-gradient(50deg, #020025 56%, #ffdfdf 100%);
   color: #f5f6fa;
-  border: 2px solid #020025;
+  border: none;
+}
+.font {
+  font-family: 'Acme', sans-serif;
 }
 .container {
   max-width: 1260px;
@@ -147,6 +150,9 @@
   padding: 6px;
   background-image: linear-gradient(50deg, #020025 56%, #ffdfdf 100%);
 }
+.projects-list-item h3 {
+  text-align: center;
+}
 .projects-list-item-img {
   display: flex;
   justify-content: space-between;
@@ -173,8 +179,8 @@
   }
 }
 .projects-list-item-img p {
-  font-size: 14px;
-  max-width: 450px;
+  font-size: 12px;
+  max-width: 320px;
   line-height: 2;
 }
 .projects-list-item a {
@@ -193,6 +199,16 @@
 .projects-list-item a:hover {
   color: #1284c2;
   background-color: transparent;
+}
+.img-skills {
+  max-width: 200px;
+}
+.img-skills img {
+  width: 30px;
+  height: 30px;
+  background-image: linear-gradient(50deg, #ffdfdf, #020025 100%);
+  border-radius: 50%;
+  margin: 0 6px;
 }
 .marginBottom8 {
   margin-bottom: 8px;
@@ -273,6 +289,7 @@ li {
   font-size: 14px;
   font-weight: lighter;
   text-align: center;
+  line-height: 2;
 }
 .social-links {
   display: flex;
