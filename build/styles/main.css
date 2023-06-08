@@ -6,66 +6,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /*.skills {
-        position: relative;
-        top: 14%;
-        display: flex;
-        flex-direction: column;
-        padding: 56px 0 20px;
-        //margin: 30% 0 0;
-    
-        
-        h3 {
-            padding: 14px 0;
-            font-size: 18px;
-            font-family: 'Acme', sans-serif;
-
-            @media @breakpointMobile {
-                padding: 12px 0 20px;
-            }
-        }
-
-        .bloco2 {
-            max-width: 300px;
-
-            @media @breakpointTablet {
-                margin: 14px auto;
-            }
-
-            @media @breakpointMobile {
-                max-width: 180px;
-                margin: 14px auto;
-            }
-        }
-        
-        ul{
-            max-width: 420px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            
-            li {
-                img {
-                    max-width: 52px;
-                    transition: all ease .3s;
-                    opacity: calc(70%) ;
-
-                    @media @breakpointMobile {
-                        max-width: 40px;
-                    }
-
-                    &:hover {
-                        transform: scale(1.2);
-                    }
-                }
-            }
-    }
-}*/
 }
 @media (max-width: 767px) {
   .cabecalho {
     width: 80%;
   }
+}
+.cabecalho .buttons button {
+  margin: 4px;
 }
 @media (max-width: 767px) {
   .cabecalho .buttons button {
@@ -73,14 +21,14 @@
   }
 }
 .cabecalho h1 {
+  font-style: italic;
   font-family: 'Acme', sans-serif;
   font-size: 38px;
-  /*
-        background-image: linear-gradient(100deg, rgb(244, 168, 168) 50%, rgb(2, 0, 37)50%);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        color: transparent;*/
+  background-image: linear-gradient(45deg, #8d4444 30%, #040223, #020025);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 @media (max-width: 767px) {
   .cabecalho h1 {
@@ -88,14 +36,15 @@
   }
 }
 .cabecalho h2 {
+  font-style: italic;
   font-size: 62px;
   font-family: 'Rowdies', cursive;
   margin: 12px 0;
-  /*background-image: linear-gradient(90deg, rgb(244, 168, 168) 58%, rgb(47, 44, 102), rgb(2, 0, 37)40%);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        color: transparent;*/
+  background-image: linear-gradient(45deg, #ccb4b4 40%, #7e3131, #040123, #020123);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 @media (max-width: 767px) {
   .cabecalho h2 {
@@ -112,8 +61,8 @@
   color: #f5f6fa;
   text-transform: none;
   font-size: 12px;
-  background-color: #1284c2;
-  border: 2px solid #1284c2;
+  background-image: linear-gradient(50deg, #ffdfdf, #020025 100%);
+  border: none;
   transition: all ease 0.5s;
 }
 @media (max-width: 767px) {
@@ -124,8 +73,9 @@
   }
 }
 .cabecalho button:hover {
-  background-color: transparent;
+  background-image: linear-gradient(50deg, #020025 56%, #ffdfdf 100%);
   color: #f5f6fa;
+  border: 2px solid #020025;
 }
 .container {
   max-width: 1260px;
