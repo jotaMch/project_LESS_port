@@ -38,6 +38,11 @@
                     width: 120px;
                     height: 220px;
                     border-radius: 4px;
+                    transition: transform 0.9s ease;
+
+                    &:hover {
+                        transform: rotateY(360deg);
+                    }
 
                     @media @breakpointMobile {
                         width: 100px;
@@ -82,6 +87,11 @@
         background-image: #colors[corReverso];
         border-radius: 50%;
         margin: 0 6px;
+        transition: transform 0.9s ease;
+
+        &:hover {
+            transform: rotateZ(360deg);
+        }
     }
 }
 

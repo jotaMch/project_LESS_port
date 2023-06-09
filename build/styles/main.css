@@ -171,6 +171,10 @@
   width: 120px;
   height: 220px;
   border-radius: 4px;
+  transition: transform 0.9s ease;
+}
+.projects-list-item-img img:hover {
+  transform: rotateY(360deg);
 }
 @media (max-width: 767px) {
   .projects-list-item-img img {
@@ -209,6 +213,10 @@
   background-image: linear-gradient(50deg, #ffdfdf, #020025 100%);
   border-radius: 50%;
   margin: 0 6px;
+  transition: transform 0.9s ease;
+}
+.img-skills img:hover {
+  transform: rotateZ(360deg);
 }
 .marginBottom8 {
   margin-bottom: 8px;
@@ -229,6 +237,7 @@ li {
 #sobre {
   padding-bottom: 150px;
   display: flex;
+  justify-content: space-between;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #sobre {
@@ -244,7 +253,6 @@ li {
 #sobre .profile-bio {
   text-align: center;
   max-width: 540px;
-  margin: 0 auto;
   transition: all ease 0.3s;
 }
 #sobre .profile-bio .profile {
