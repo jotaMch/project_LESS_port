@@ -12,39 +12,48 @@
         width: 80%;
     }
 
+    img {
+        max-width: 400px;
+        border-radius: 500px;
+        margin: 0 auto;
+    }
+
     .buttons {
         button {
             margin: 4px;
+            padding: 14px 18px;
+            font-size: 16px;
             @media @breakpointMobile {
                 display: block;
                 text-align: center;
                 margin: 12px auto;
-                padding: 8px;
+                padding: 10px 14px;
             }
             }
     }
 
     h1 {
-        font-style: italic;
+        //font-style: italic;
         font-family: 'Acme', sans-serif;
-        font-size: 38px;    
+        font-size: 92px;    
 
-        background-image: linear-gradient(45deg, rgb(141, 68, 68)30%, rgb(4, 2, 35), rgb(2, 0, 37));
+        background-image: linear-gradient(45deg, rgb(204, 180, 180)40%, rgb(126, 49, 49), rgb(4, 1, 35), rgb(2, 1, 35));
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;
         color: transparent;
 
         @media @breakpointMobile {
-            font-size: 18px;
+            font-size: 42px;
         }
     }
 
     h2 {
-        font-style: italic;
-        font-size: 62px;
+        //font-style: italic;
+        font-size: 40px;
         font-family: 'Rowdies', cursive;
-        margin: 12px 0;
+        margin: 12px auto;
+        max-width: 800px;
 
         background-image: linear-gradient(45deg, rgb(204, 180, 180)40%, rgb(126, 49, 49), rgb(4, 1, 35), rgb(2, 1, 35));
         -webkit-background-clip: text;
@@ -53,7 +62,7 @@
         color: transparent;
         
         @media @breakpointMobile {
-            font-size: 28px;
+            font-size: 24px;
             margin: 0 auto;
             text-align: center;
             //max-width: 240px;

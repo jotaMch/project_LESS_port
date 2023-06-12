@@ -12,22 +12,28 @@
     width: 80%;
   }
 }
+.cabecalho img {
+  max-width: 400px;
+  border-radius: 500px;
+  margin: 0 auto;
+}
 .cabecalho .buttons button {
   margin: 4px;
+  padding: 14px 18px;
+  font-size: 16px;
 }
 @media (max-width: 767px) {
   .cabecalho .buttons button {
     display: block;
     text-align: center;
     margin: 12px auto;
-    padding: 8px;
+    padding: 10px 14px;
   }
 }
 .cabecalho h1 {
-  font-style: italic;
   font-family: 'Acme', sans-serif;
-  font-size: 38px;
-  background-image: linear-gradient(45deg, #8d4444 30%, #040223, #020025);
+  font-size: 92px;
+  background-image: linear-gradient(45deg, #ccb4b4 40%, #7e3131, #040123, #020123);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -35,14 +41,14 @@
 }
 @media (max-width: 767px) {
   .cabecalho h1 {
-    font-size: 18px;
+    font-size: 42px;
   }
 }
 .cabecalho h2 {
-  font-style: italic;
-  font-size: 62px;
+  font-size: 40px;
   font-family: 'Rowdies', cursive;
-  margin: 12px 0;
+  margin: 12px auto;
+  max-width: 800px;
   background-image: linear-gradient(45deg, #ccb4b4 40%, #7e3131, #040123, #020123);
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -51,7 +57,7 @@
 }
 @media (max-width: 767px) {
   .cabecalho h2 {
-    font-size: 28px;
+    font-size: 24px;
     margin: 0 auto;
     text-align: center;
   }
@@ -228,14 +234,14 @@
   font-family: 'Overpass', sans-serif;
 }
 body {
-  background: linear-gradient(50deg, #020025 56%, #ffdfdf 100%);
+  background: linear-gradient(50deg, #080122 56%, #ffdfdf 100%);
   color: #f5f6fa;
 }
 li {
   list-style: none;
 }
 #sobre {
-  padding-bottom: 150px;
+  padding: 150px 0;
   display: flex;
   justify-content: space-between;
 }
