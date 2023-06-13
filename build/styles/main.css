@@ -17,6 +17,11 @@
   border-radius: 500px;
   margin: 0 auto;
 }
+@media (max-width: 767px) {
+  .cabecalho img {
+    max-width: 150px;
+  }
+}
 .cabecalho .buttons button {
   margin: 4px;
   padding: 14px 18px;
@@ -33,7 +38,7 @@
 .cabecalho h1 {
   font-family: 'Acme', sans-serif;
   font-size: 92px;
-  background-image: linear-gradient(45deg, #ccb4b4 40%, #7e3131, #040123, #020123);
+  background-image: linear-gradient(45deg, #111111 40%, #7e3131, #040123, #020123);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -49,7 +54,7 @@
   font-family: 'Rowdies', cursive;
   margin: 12px auto;
   max-width: 800px;
-  background-image: linear-gradient(45deg, #ccb4b4 40%, #7e3131, #040123, #020123);
+  background-image: linear-gradient(45deg, #111111 40%, #7e3131, #040123, #020123);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -70,7 +75,7 @@
   color: #f5f6fa;
   text-transform: none;
   font-size: 12px;
-  background-image: linear-gradient(50deg, #ffdfdf, #020025 100%);
+  background-image: linear-gradient(50deg, #191919 10%, #020025 56%);
   border: none;
   transition: all ease 0.5s;
 }
@@ -82,7 +87,7 @@
   }
 }
 .cabecalho button:hover {
-  background-image: linear-gradient(50deg, #020025 56%, #ffdfdf 100%);
+  background-image: linear-gradient(50deg, #020025 56%, #131212 100%);
   color: #f5f6fa;
   border: none;
 }
@@ -150,11 +155,11 @@
   transition: opacity 0.3s ease;
 }
 .projects-list-item {
-  border: 2px solid #020025;
+  border: 2px solid #060019;
   margin: 28px 0;
   border-radius: 8px;
   padding: 6px;
-  background-image: linear-gradient(50deg, #020025 56%, #ffdfdf 100%);
+  background-image: linear-gradient(50deg, #060019 56%, #ffdfdf 100%);
 }
 .projects-list-item h3 {
   text-align: center;
@@ -256,7 +261,7 @@
 .img-skills img {
   width: 30px;
   height: 30px;
-  background-image: linear-gradient(50deg, #ffdfdf, #020025 100%);
+  background-image: linear-gradient(50deg, #191919 40%, #1b1669 56%);
   border-radius: 50%;
   margin: 0 6px;
   transition: all ease 0.3s;
@@ -274,7 +279,7 @@
   font-family: 'Overpass', sans-serif;
 }
 body {
-  background: linear-gradient(50deg, #080122 56%, #ffdfdf 100%);
+  background: linear-gradient(50deg, #060019 56%, #ffdfdf 100%);
   color: #f5f6fa;
 }
 @media (max-width: 767px) {
