@@ -145,7 +145,7 @@
   padding-top: 50px;
 }
 .projects-list {
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto ;
   transition: opacity 0.3s ease;
 }
@@ -193,11 +193,46 @@
   max-width: 320px;
   line-height: 2;
 }
+.projects-list-item .btns {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 767px) {
+  .projects-list-item .btns {
+    display: block;
+  }
+}
+.projects-list-item .btns .github {
+  max-width: 352px;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: #65024e;
+  display: block;
+  padding: 14px 100px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #f5f6fa;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 2px solid #65024e;
+  transition: all ease 0.5s;
+}
+@media (max-width: 767px) {
+  .projects-list-item .btns .github {
+    padding: 12px 60px;
+  }
+}
+.projects-list-item .btns .github:hover {
+  color: #65024e;
+  background-color: transparent;
+}
 .projects-list-item a {
+  max-width: 352px;
+  font-size: 14px;
   text-decoration: none;
   background-color: #1284c2;
   display: block;
-  padding: 14px 20px;
+  padding: 14px 100px;
   margin-bottom: 20px;
   text-align: center;
   color: #f5f6fa;
@@ -205,6 +240,11 @@
   border-radius: 30px;
   border: 2px solid #1284c2;
   transition: all ease 0.5s;
+}
+@media (max-width: 767px) {
+  .projects-list-item a {
+    padding: 12px 60px;
+  }
 }
 .projects-list-item a:hover {
   color: #1284c2;
@@ -219,10 +259,10 @@
   background-image: linear-gradient(50deg, #ffdfdf, #020025 100%);
   border-radius: 50%;
   margin: 0 6px;
-  transition: transform 0.9s ease;
+  transition: all ease 0.3s;
 }
 .img-skills img:hover {
-  transform: rotateZ(360deg);
+  transform: scale(1.3);
 }
 .marginBottom8 {
   margin-bottom: 8px;
