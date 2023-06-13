@@ -57,7 +57,7 @@
 }
 @media (max-width: 767px) {
   .cabecalho h2 {
-    font-size: 24px;
+    font-size: 18px;
     margin: 0 auto;
     text-align: center;
   }
@@ -236,6 +236,11 @@
 body {
   background: linear-gradient(50deg, #080122 56%, #ffdfdf 100%);
   color: #f5f6fa;
+}
+@media (max-width: 767px) {
+  body {
+    background: linear-gradient(70deg, #080122 66%, #b0a0a0 100%);
+  }
 }
 li {
   list-style: none;
