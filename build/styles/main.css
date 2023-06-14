@@ -231,6 +231,7 @@
 @media (max-width: 767px) {
   .projects-list-item .btns .github {
     padding: 12px 60px;
+    width: 100%;
   }
 }
 .projects-list-item .btns .github:hover {
