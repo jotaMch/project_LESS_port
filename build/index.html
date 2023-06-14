@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do Jânderson</title>
+    <link rel="stylesheet" href="build/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet"><!--nome-->
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet"> <!--front-end-->
+</head>
+<body>
+    <div class="container">
+        <header id="inicio">
+            <div class="cabecalho">
+                <img src="./src/images/inicio/Excellent Quality Statistics Help From Best Statisticians.webp" alt="">
+                <h1>Jânderson Machado</h1>
+                <h2 class="subtitle"></h2>
+                <div class="buttons">
+                    <button type="button" onclick="scrollToSection('sobre')">Sobre mim</button>
+                    <button type="button" onclick="scrollToSection('projetos')">Meus projetos</button>
+                </div>
+            </div>
+        </header>
+        <div class="container-flex">
+            <section id="sobre">
+                <div class="profile-bio">
+                    <img class="profile" src="src/images/perfil-original.jpg" />
+                    <nav>
+                        <ul class="social-links">
+                            <li>
+                                <a href="https://www.linkedin.com/in/j%C3%A2nderson-machado-082b54259/">
+                                    <img src="./src/images/linkedin.svg" alt="Logo do linkedin">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/jotaMch">
+                                    <img src="./src/images/github.svg" alt="Logo do github">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:jandersonmachado090@gmail.com">
+                                    <img src="./src/images/mail.svg" alt="Logo do Email">
+                                </a>
+                            </li>
+                            <li>
+                            <a href="https://wa.me/5521965063664">
+                                <img src="./src/images/icons8-whatsapp-24.png" alt="Logo do instagram">
+                            </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <p class="profile-bio-description">
+                        Olá, me chamo Jânderson. Sou um desenvolvedor dedicado com 23 anos, resido no Rio de Janeiro e sou apaixonado por tecnologia. 
+                        Atualmente, estou buscando oportunidades no mercado para colocar
+                        em prática meus conhecimentos.
+                        Gosto muito de me desenvolver e aprender mais sobre tecnologias. 
+                        Estou estudando React e através desse estudo busco aprimorar minha capacidade de criar novas experiências que proporcionam
+                        ótima usabilidade para os usuários.<br />
+                    </p>
+                </div>
+                <div class="cursos">
+                    <h2>Cursos</h2>
+                    <nav>
+                        <ul>
+                            <li>Tenho o curso de introdução a programação - Completo / EBAC</li>
+                            <li>Tenho o Curso de Desenvolvimento Front-end do zero ao pro - Completo / EBAC</li>
+                            <li>Estudo React do zero ao pro - Estudanto / EBAC</li>
+                            <li>Estudo por fora sempre bucando maior conhecimento desde 2022.</li>
+                        </ul>
+                    </nav>
+                    <h2>Objetivo</h2>
+                    <p>
+                        Meu objetivo é aplicar minhas habilidades como desenvolvedor front-end 
+                        para criar interfaces web modernas e responsivas utilizando as melhores práticas. 
+                        Busco oportunidades para contribuir em projetos desafiadores, aprimorar minhas habilidades 
+                        técnicas e colaborar com uma equipe criativa visando o crescimento profissional.
+                    </p>
+                </div>
+            </section>
+
+            <!--Projetos-->
+
+            <section id="projetos">
+                <h2 class="project">Meus Projetos</h2>
+                <nav>
+                    <ul class="projects-list">
+                        <li class="projects-list-item">
+                            <h3 class="font">Grif Shop</h3>
+                            <div class="projects-list-item-img">
+                                <p>
+                                    Grif Shop foi um projeto que desenvolvi ultilizando HTML5, CSS3, Bootstrap e JQuery. 
+                                    É uma loja de roupas que apresenta um menu interativo com o conteúdo da página onde mostra 
+                                    imagens do local em um carrosel, após isso temos 4 seções onde fica a descrição sobre a loja, tecidos, 
+                                    peças de roupas, um formulário para contato e redes sociais. 
+                                    
+                                </p>
+                                <div class="img-skills">
+                                    <img src="./src/images/skills/icons8-html-5-30.png" alt="">
+                                    <img src="./src/images/skills/icons8-css-30.png" alt="">
+                                    <img src="./src/images/skills/icons8-bootstrap-a-free-and-open-source-css-framework-30.png" alt="">
+                                    <img src="./src/images/skills/icons8-jquery-is-a-javascript-library-designed-to-simplify-html-30.png" alt="">
+                                </div>
+                                <img src="./src/images/project/grif-shop.png" alt="">
+                            </div>
+                            <div class="btns">
+                                <a class="github" href="https://github.com/jotaMch/loja-de-roupas-m14">
+                                    Visite no Github
+                                </a>
+                                <a href="https://loja-de-roupas-jm.vercel.app/">
+                                    Visite o projeto
+                                </a>
+                            </div>
+                        </li>
+                        <li class="projects-list-item">
+                            <h3 class="font">Jota Motors</h3>
+                            <div class="projects-list-item-img">
+                                <p>
+                                    Ultilizei as linguagens HTML5, CSS3, JQuery e o pré-processador SASS. Um site responsivo 
+                                    com validações, animações e funções ultilizando Biblioteca Javascript. Exibe uma possivel loja 
+                                    com fotos dos carros no carrosel do site, seçoes sobre a loja destaques e promoções e ao final 
+                                    contamos com um formulário com validações.
+
+                                </p>
+                                <div class="img-skills">
+                                    <img src="./src/images/skills/icons8-html-5-30.png" alt="">
+                                    <img src="./src/images/skills/icons8-sass-30.png" alt="">
+                                    <img src="./src/images/skills/icons8-jquery-is-a-javascript-library-designed-to-simplify-html-30.png" alt="">
+                                </div>
+                                <img src="./src/images/project/carros.png" alt="">
+                            </div>
+                            <div class="btns">
+                                <a class="github" href="https://github.com/jotaMch/loja_de_carros">
+                                    Visite no Github
+                                </a>
+                                <a href="https://loja-jm.vercel.app/">
+                                    Visite o projeto
+                                </a>
+                            </div>
+                        </li>
+                        <li class="projects-list-item">
+                            <h3 class="font">Calculadora de médias</h3>
+                            <div class="projects-list-item-img">
+                                <p>
+                                    Calculadora de médias foi desenvolvida com HTML5, CSS3 e Javascript para verificar as notas 
+                                    e se elas estão obtendo uma média desejavel, é escolhida de acordo com a sua necessidade.
+
+                                </p>
+                                <div class="img-skills">
+                                    <img src="./src/images/skills/icons8-html-5-30.png" alt="">
+                                    <img src="./src/images/skills/icons8-css-30.png" alt="">
+                                    <img src="./src/images/skills/icons8-javascript-30.png" alt="">
+                                </div>
+                                <img src="./src/images/project/calculadora-médias.png" alt="">
+                            </div>
+                            <div class="btns">
+                                <a class="github" href="https://github.com/jotaMch/projeto_calculadora_medias">
+                                    Visite no Github
+                                </a>
+                                <a href="https://projeto-calculadora-medias-jm.vercel.app/">
+                                    Visite o projeto
+                                </a>
+                            </div>
+                        </li>
+                        <li class="projects-list-item">
+                            <h3 class="font">Galeria de fotos</h3>
+                            <div class="projects-list-item-img">
+                                <p>
+                                    Nesse projeto ultilizei HTML5, CSS3 e JQuery. A Galeria funciona ao colocar a URL da imagem 
+                                    que for escolhida ela sera adicionada na galeria e ela recebe a opção de ser vista em tamanho real.
+
+                                </p>
+                                <div class="img-skills">
+                                    <img src="./src/images/skills/icons8-html-5-30.png" alt="">
+                                    <img src="./src/images/skills/icons8-css-30.png" alt="">
+                                    <img src="./src/images/skills/icons8-jquery-is-a-javascript-library-designed-to-simplify-html-30.png" alt="">
+                                </div>
+                                <img src="./src/images/project/Galeria.png" alt="">
+                            </div>
+                            <div class="btns">
+                                <a class="github" href="https://jm-jquery-galeria-fotos.vercel.app/">
+                                    Visite no Guthub
+                                </a>
+                                <a href="https://jm-jquery-galeria-fotos.vercel.app/">
+                                    Visite o projeto
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <button type="button" onclick="scrollToSection('inicio')">
+                    <img class="up" src="./src/images/chevrons-up.svg" alt="logo up" >
+                </button>
+            </section>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

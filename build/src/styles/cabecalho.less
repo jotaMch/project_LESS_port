@@ -1,0 +1,105 @@
+
+.cabecalho {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media @breakpointMobile {
+        width: 80%;
+    }
+
+    img {
+        max-width: 240px;
+        border-radius: 500px;
+        margin: 0 auto;
+
+        @media @breakpointMobile {
+            max-width: 150px;
+        }
+    }
+
+    .buttons {
+        button {
+            margin: 4px;
+            padding: 14px 18px;
+            font-size: 16px;
+            @media @breakpointMobile {
+                display: block;
+                text-align: center;
+                margin: 12px auto;
+                padding: 10px 14px;
+            }
+            }
+    }
+
+    h1 {
+        //font-style: italic;
+        font-family: 'Acme', sans-serif;
+        font-size: 92px;   
+
+        background-image: linear-gradient(45deg, rgb(126, 49, 49), rgb(17, 17, 17)40%, rgb(126, 49, 49), rgb(4, 1, 35), rgb(2, 1, 35));
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+
+        @media @breakpointMobile {
+            font-size: 42px;
+        }
+    }
+
+    h2 {
+        //font-style: italic;
+        font-size: 40px;
+        font-family: 'Rowdies', cursive;
+        margin: 12px auto;
+        max-width: 800px;
+
+        background-image: linear-gradient(45deg, rgb(126, 49, 49), rgb(17, 17, 17)40%, rgb(126, 49, 49), rgb(17, 17, 17), rgb(126, 49, 49));
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        
+        @media @breakpointMobile {
+            font-size: 18px;
+            margin: 0 auto;
+            text-align: center;
+            //max-width: 240px;
+            //width: 100%;
+        }
+    }
+    
+    button {
+        padding: 6px 8px;
+        border-radius: 4px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        font-family: 'Zilla Slab', serif;
+        color: #colors[textColor];
+        text-transform: none;
+        font-size: 12px;
+        background-image: #colors[corReverso];
+        border: none;
+        transition: all ease .5s;
+
+        @media @breakpointMobile {
+            padding: 4px 6px;
+            font-size: 12px;
+            margin: 12px auto;
+        }
+
+        &:hover {
+            background-image: #colors[corGradiente];
+            color: #colors[textColor];
+            border: none;//2px solid #colors[corAzul];
+        }
+    }
+}
+
+.font {
+    font-family: 'Acme', sans-serif;
+}

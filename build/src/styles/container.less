@@ -1,0 +1,54 @@
+
+.container {
+    max-width: 1260px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    @media @breakpointMobile {
+        max-width: 80%;
+        //background-color: ;
+    }
+
+    @media @breakpointTablet {
+        max-width: 80%;
+        //background-color: ;
+    }    
+}
+
+.container-flex {
+    //display: flex;
+    //justify-content: space-between;
+    margin-bottom: 180px;
+
+    @media @breakpointMobile {
+        margin-bottom: 80px;
+    }
+
+    button {
+        position: absolute;
+        right: 12%;
+        padding: 6px 8px;
+        border-radius: 50px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        color: #colors[textColor];
+        background-color: #colors[buttonColor];
+        border: 2px solid #colors[buttonColor];
+        transition: all ease .5s;
+
+        @media @breakpointTablet {
+            right: 2%;
+        }
+
+        &:hover {
+            background-color: transparent;
+            color: #colors[btnHover];
+        }
+        
+        img {
+            filter: invert(100%); 
+        }
+    }
+}
