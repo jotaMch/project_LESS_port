@@ -214,6 +214,7 @@
   text-decoration: none;
   background-color: #65024e;
   display: block;
+  padding: 14px 100px;
   margin-bottom: 20px;
   text-align: center;
   color: #f5f6fa;
@@ -260,7 +261,7 @@
 @media (max-width: 767px) {
   .projects-list-item a {
     padding: 12px 60px;
-    margin: 0 auto;
+    margin: 4px auto;
   }
 }
 .projects-list-item a:hover {
