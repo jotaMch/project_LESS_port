@@ -37,8 +37,8 @@
 }
 .cabecalho h1 {
   font-family: 'Acme', sans-serif;
-  font-size: 92px;
-  background-image: linear-gradient(45deg, #7e3131, #111111 40%, #7e3131, #040123, #020123);
+  font-size: 72px;
+  background-image: linear-gradient(45deg, #d0c5a4 40%, #cfc9b6, #cfbf9a 60%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -50,11 +50,11 @@
   }
 }
 .cabecalho h2 {
-  font-size: 40px;
+  font-size: 32px;
   font-family: 'Rowdies', cursive;
   margin: 12px auto;
   max-width: 800px;
-  background-image: linear-gradient(45deg, #7e3131, #111111 40%, #7e3131, #111111, #7e3131);
+  background-image: linear-gradient(45deg, #d0c5a4 40%, #cfc9b6, #cfbf9a 60%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -72,10 +72,10 @@
   border-radius: 4px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   font-family: 'Zilla Slab', serif;
-  color: #f5f6fa;
+  color: #473907;
   text-transform: none;
   font-size: 12px;
-  background-image: linear-gradient(50deg, #191919 10%, #020025 56%);
+  background-image: linear-gradient(45deg, #9a874f 40%, #f0db97, #d5b66d 60%);
   border: none;
   transition: all ease 0.5s;
 }
@@ -87,37 +87,35 @@
   }
 }
 .cabecalho button:hover {
-  background-image: linear-gradient(50deg, #020025 56%, #131212 100%);
-  color: #f5f6fa;
+  background-image: linear-gradient(45deg, #f0db97 30%, #b99d49, #f0db97 60%);
+  color: #473907;
   border: none;
 }
 .font {
   font-family: 'Acme', sans-serif;
 }
-.container {
+.container,
+html {
+  background-image: linear-gradient(to right top, #c6b9c0, #d0bbbe, #d7beb9, #d9c2b3, #d5c9b0, #d4ceb0, #d1d3b2, #ccd9b5, #d0ddb6, #d5e1b7, #d9e5b7, #dee9b8);
+}
+.container-flex {
   max-width: 1260px;
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-@media (max-width: 767px) {
-  .container {
-    max-width: 80%;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .container {
-    max-width: 80%;
-  }
-}
-.container-flex {
   margin-bottom: 180px;
 }
 @media (max-width: 767px) {
   .container-flex {
     margin-bottom: 80px;
+    max-width: 80%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container-flex {
+    max-width: 80%;
   }
 }
 .container-flex button {
@@ -126,9 +124,9 @@
   padding: 6px 8px;
   border-radius: 50px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  color: #f5f6fa;
-  background-color: #1284c2;
-  border: 2px solid #1284c2;
+  color: #473907;
+  background-color: #735f1a;
+  border: 2px solid #735f1a;
   transition: all ease 0.5s;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -138,7 +136,7 @@
 }
 .container-flex button:hover {
   background-color: transparent;
-  color: #007abc;
+  color: #f0db97;
 }
 .container-flex button img {
   filter: invert(100%);
@@ -155,11 +153,12 @@
   transition: opacity 0.3s ease;
 }
 .projects-list-item {
-  border: 2px solid #060019;
+  border: 2px solid #f0db97;
   margin: 28px 0;
   border-radius: 8px;
+  border: none;
   padding: 6px;
-  background-image: linear-gradient(50deg, #060019 56%, #ffdfdf 100%);
+  background-image: linear-gradient(to right top, #b5a5ae, #c0a7ab, #c8aaa5, #cab09e, #c5b79b, #c6bf9d, #c5c7a1, #c2cfa7, #ccd9ac, #d5e3b1, #e0eeb6, #eaf8bb);
 }
 .projects-list-item h3 {
   text-align: center;
@@ -242,7 +241,7 @@
   max-width: 352px;
   font-size: 14px;
   text-decoration: none;
-  background-color: #1284c2;
+  background-color: #735f1a;
   display: block;
   padding: 14px 100px;
   margin-bottom: 20px;
@@ -250,7 +249,7 @@
   color: #f5f6fa;
   font-weight: bold;
   border-radius: 30px;
-  border: 2px solid #1284c2;
+  border: 2px solid #735f1a;
   transition: all ease 0.5s;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -265,7 +264,7 @@
   }
 }
 .projects-list-item a:hover {
-  color: #1284c2;
+  color: #735f1a;
   background-color: transparent;
 }
 .img-skills {
@@ -274,13 +273,29 @@
 .img-skills img {
   width: 30px;
   height: 30px;
-  background-image: linear-gradient(50deg, #191919 40%, #1b1669 56%);
+  background-image: linear-gradient(to right top, #b5a5ae, #c0a7ab, #c8aaa5, #cab09e, #c5b79b, #c6bf9d, #c5c7a1, #c2cfa7, #ccd9ac, #d5e3b1, #e0eeb6, #eaf8bb);
   border-radius: 50%;
   margin: 0 6px;
   transition: all ease 0.3s;
 }
 .img-skills img:hover {
   transform: scale(1.3);
+}
+#inicio {
+  background-image: url(../../src/images/inicio/laptop-2620118.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+#inicio::before {
+  content: "";
+  background-image: url(../../src/images/inicio/laptop-2620118.jpg);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 .marginBottom8 {
   margin-bottom: 8px;
@@ -292,15 +307,9 @@
   font-family: 'Overpass', sans-serif;
 }
 body {
-  background-color: #cfc2a6;
-  background-color: #011426;
-  background: linear-gradient(70deg, #080122 66%, #b0a0a0 100%);
-  color: #f5f6fa;
+  color: #473907;
 }
 @media (max-width: 767px) {
-  body {
-    background: linear-gradient(70deg, #080122 66%, #b0a0a0 100%);
-  }
 }
 li {
   list-style: none;
@@ -326,6 +335,10 @@ li {
   max-width: 540px;
   transition: all ease 0.3s;
 }
+#sobre .profile-bio nav {
+  border-bottom: 2px solid #473907;
+  padding-bottom: 4px;
+}
 #sobre .profile-bio .profile {
   display: block;
   max-width: 98px;
@@ -338,7 +351,10 @@ li {
   margin: 0 auto;
   font-size: 16px;
   opacity: 0.9;
-  line-height: 2em;
+  line-height: 2.1em;
+  font-weight: bolder;
+  padding-top: 6px;
+  font-size: 14px;
 }
 #sobre .cursos {
   max-width: 500px;
@@ -356,6 +372,7 @@ li {
   text-align: center;
   margin: 30px 0 20px;
   font-family: 'Rowdies', cursive;
+  border-bottom: 2px solid #473907;
 }
 #sobre .cursos ul {
   line-height: 2;
@@ -385,8 +402,8 @@ li {
 }
 button {
   background-color: transparent;
-  border: 2px solid #1284c2;
-  color: #f5f6fa;
+  border: 2px solid #735f1a;
+  color: #473907;
   border-radius: 30px;
   max-width: 300px;
   margin: 0 auto;
@@ -396,6 +413,6 @@ button {
   cursor: pointer;
 }
 button:hover {
-  border: 2px solid #007abc;
+  border: 2px solid #f0db97;
   transition: all ease 0.2s;
 }

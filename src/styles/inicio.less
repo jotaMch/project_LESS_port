@@ -1,0 +1,23 @@
+
+#inicio {
+    background-image: url(../../src/images/inicio/laptop-2620118.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    width: 100%;
+    height: 100vh;
+    
+    @media @breakpointMobile {
+}
+}
+
+#inicio::before {
+    content: "";
+    background-image: url(../../src/images/inicio/laptop-2620118.jpg);
+    opacity: 0.5; 
+    //position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}

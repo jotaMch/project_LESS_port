@@ -1,5 +1,11 @@
 
-.container {
+.container, html {   
+background-image: linear-gradient(to right top, #c6b9c0, #d0bbbe, #d7beb9, #d9c2b3, #d5c9b0, #d4ceb0, #d1d3b2, #ccd9b5, #d0ddb6, #d5e1b7, #d9e5b7, #dee9b8);
+}
+
+.container-flex {
+    //display: flex;
+    //justify-content: space-between;
     max-width: 1260px;
     width: 100%;
     margin: 0 auto;
@@ -8,6 +14,7 @@
     justify-content: center;
     
     @media @breakpointMobile {
+        margin-bottom: 80px;
         max-width: 80%;
         //background-color: ;
     }
@@ -15,17 +22,9 @@
     @media @breakpointTablet {
         max-width: 80%;
         //background-color: ;
-    }    
-}
-
-.container-flex {
-    //display: flex;
-    //justify-content: space-between;
+    } 
     margin-bottom: 180px;
 
-    @media @breakpointMobile {
-        margin-bottom: 80px;
-    }
 
     button {
         position: absolute;
