@@ -160,6 +160,11 @@ html {
   padding: 6px;
   background-image: linear-gradient(to right top, #b5a5ae, #c0a7ab, #c8aaa5, #cab09e, #c5b79b, #c6bf9d, #c5c7a1, #c2cfa7, #ccd9ac, #d5e3b1, #e0eeb6, #eaf8bb);
 }
+@media (max-width: 767px) {
+  .projects-list-item {
+    background-image: linear-gradient(45deg, #b5a5ae, #c0a7ab, #c8aaa5, #cab09e, #c5b79b, #c6bf9d, #c5c7a1, #c2cfa7, #ccd9ac, #d5e3b1, #e0eeb6, #eaf8bb);
+  }
+}
 .projects-list-item h3 {
   text-align: center;
 }
@@ -196,6 +201,11 @@ html {
   font-size: 12px;
   max-width: 320px;
   line-height: 2;
+}
+@media (max-width: 767px) {
+  .projects-list-item-img p {
+    font-weight: bold;
+  }
 }
 .projects-list-item .btns {
   display: flex;
@@ -268,13 +278,12 @@ html {
   background-color: transparent;
 }
 .img-skills {
-  max-width: 200px;
+  max-width: 250px;
 }
 .img-skills img {
   width: 30px;
   height: 30px;
   background-image: linear-gradient(to right top, #b5a5ae, #c0a7ab, #c8aaa5, #cab09e, #c5b79b, #c6bf9d, #c5c7a1, #c2cfa7, #ccd9ac, #d5e3b1, #e0eeb6, #eaf8bb);
-  border-radius: 50%;
   margin: 0 6px;
   transition: all ease 0.3s;
 }
@@ -352,7 +361,7 @@ li {
   font-size: 16px;
   opacity: 0.9;
   line-height: 2.1em;
-  font-weight: bolder;
+  font-weight: bold;
   padding-top: 6px;
   font-size: 14px;
 }
@@ -370,9 +379,15 @@ li {
   font-weight: lighter;
   font-size: 20px;
   text-align: center;
-  margin: 30px 0 20px;
+  margin: 30px 20px;
   font-family: 'Rowdies', cursive;
   border-bottom: 2px solid #473907;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sobre .cursos h2 img {
+  max-width: 24px;
 }
 #sobre .cursos ul {
   line-height: 2;
@@ -380,6 +395,10 @@ li {
 #sobre .cursos ul li {
   font-size: 14px;
   font-weight: lighter;
+}
+#sobre .cursos ul li img {
+  max-width: 14px;
+  margin-right: 6px;
 }
 #sobre .cursos p {
   font-size: 14px;
@@ -395,6 +414,7 @@ li {
   margin: 0 auto;
 }
 .social-links li img {
+  max-width: 24px;
   transition: all ease 0.3s;
 }
 .social-links li img:hover {

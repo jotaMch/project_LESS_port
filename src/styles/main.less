@@ -70,7 +70,7 @@ li {
             font-size: 16px;
             opacity: .9;
             line-height: 2.1em;
-            font-weight:bolder;
+            font-weight:bold;
             padding-top: 6px;
             font-size: 14px;
         }
@@ -89,9 +89,16 @@ li {
             font-weight: lighter;
             font-size: 20px;
             text-align: center;
-            margin: 30px 0 20px;
+            margin: 30px 20px;
             font-family: 'Rowdies', cursive;
             border-bottom: 2px solid #colors[textColor];
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                max-width: 24px;
+            }
         }
 
         ul {
@@ -100,6 +107,11 @@ li {
             li {
                 font-size: 14px;
                 font-weight: lighter;
+
+                img {
+                    max-width: 14px;
+                    margin-right: 6px;
+                }
             }
         }
 
@@ -122,6 +134,7 @@ li {
     li{
 
         img {
+            max-width: 24px;
             transition: all ease .3s;
 
             &:hover {
